@@ -13,6 +13,7 @@ class CarsController < ApplicationController
   # GET /cars/new
   def new
     @car = Car.new
+    @thisInstanceVar = "Hello this get pass to the page"
   end
 
   # GET /cars/1/edit
@@ -65,6 +66,7 @@ class CarsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def car_params
+      # require (the model) permit(the fields)
       params.require(:car).permit(:color, :make)
     end
 end

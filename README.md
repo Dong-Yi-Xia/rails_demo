@@ -1,8 +1,8 @@
 # README
 ```
-M - singular
-V - plural
-C - plural
+M - singular (the database)
+V - plural (the page)
+C - plural (the brain)
 ```
 
 `gem devise` help create user auth login logout and stuff
@@ -25,3 +25,5 @@ always starts with a `_someFileName`
 ```
 <%= render "folderName/someFileName" %>
 ```
+
+MemoryObject by adding `.inspect` get back the information
